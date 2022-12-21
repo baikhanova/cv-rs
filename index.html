@@ -7,22 +7,22 @@
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav class="container"> 
             <ul>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Summary</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Code</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">English</a></li>
+                <li><a class="animated-link" href="#">Contacts</a></li>
+                <li><a class="animated-link" href="#">Summary</a></li>
+                <li><a class="animated-link" href="#">Skills</a></li>
+                <li><a class="animated-link" href="#">Code</a></li>
+                <li><a class="animated-link" href="#">Projects</a></li>
+                <li><a class="animated-link" href="#">Education</a></li>
+                <li><a class="animated-link" href="#">English</a></li>
             </ul>
         </nav>
     </header>
-    <div class="main-container">
+    <main class="main-container container">
         <div class="profile">
             <div class="profile-photo">
-                <img src="https://media.licdn.com/dms/image/C4D03AQHAWLcjAk-Z8Q/profile-displayphoto-shrink_400_400/0/1586269040152?e=1677110400&amp;v=beta&amp;t=T8ojSoAyTl2jv5kbUh63infGlvgzyt18JWJSux-eLEQ" alt="Anel Baikhanova"/>
+                <img src="https://media.licdn.com/dms/image/C4D03AQHAWLcjAk-Z8Q/profile-displayphoto-shrink_400_400/0/1586269040152?e=1677110400&amp;v=beta&amp;t=T8ojSoAyTl2jv5kbUh63infGlvgzyt18JWJSux-eLEQ" alt="Anel Baikhanova's photo">
             </div>
             <div class="profile-title">
                 <h1>Anel Baikhanova</h1>
@@ -50,7 +50,7 @@
         </div>
 
         <div class="third-container">
-            <div class="section" id="skills">
+            <div class="section skills">
                 <h2 class="main-title">Skills</h2>
                 <ul >
                     <li>Design: AI, PS, Figma, Canva</li>
@@ -68,7 +68,7 @@
                         function squareSum(numbers){
                             let sum = 0;
                             
-                            for (let i = 0; i < numbers.length; i++) {
+                            for (let i = 0; i &lt; numbers.length; i++) {
                             sum += Math.pow(numbers[i], 2);
                             }
                             return sum;
@@ -86,7 +86,7 @@
                         function countSheeps(arrayOfSheep) {
                             let countOfSheeps = 0;
                             
-                            for (let i = 0; i < arrayOfSheep.length; i++) {
+                            for (let i = 0; i &lt; arrayOfSheep.length; i++) {
                             if (arrayOfSheep[i] == true) {
                                 countOfSheeps += 1;
                             }
@@ -107,7 +107,7 @@
         <div class="fourth-container">
             <div class="section" id="courses">
                 <h2 class="main-title">Courses</h2>
-                <ul id="skills">
+                <ul class="skills">
                     <li>Meta - 
                         <a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/FUKCTS64B7CX">
                             Introduction to Front-End Development
@@ -127,7 +127,7 @@
             </div>
             <div class="section" id="projects">
                 <h2 class="main-title">Projects</h2>
-                <ul id="skills">
+                <ul class="skills">
                     <li>
                         <a target="_blank" href="https://github.com/baikhanova/todo">ToDo</a>
                     </li>
@@ -152,9 +152,12 @@
                 <p>B1 - Pre-Intermediate</p>
             </div>
         </div> <!-- close fifth-container -->
-    </div>
+    </main>
     <footer class="footer">
-        <p>@ 2022 Anel Baikhanova</p>
+        <div class="container">
+            <p>@ 2022 <a class="git-link animated-link" target="_blank" href="https://github.com/baikhanova">Anel Baikhanova</a></p>
+            <a href="https://rs.school/js/"><img width="200" src="assets/rs_school_js.svg" alt="rs-school-icon"></a>
+        </div>
     </footer>
 </body>
 </html>
